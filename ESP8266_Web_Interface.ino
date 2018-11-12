@@ -1,14 +1,15 @@
 /*********
-  Rui Santos
+Web interface for ESP8266  
+  from tutorial by Rui Santos
   Complete project details at http://randomnerdtutorials.com  
 *********/
 
 // Load Wi-Fi library
 #include <ESP8266WiFi.h>
-
+#include <Wifi_Credentials.h>
 // Replace with your network credentials
-const char* ssid     = "REPLACE_WITH_YOUR_SSID";
-const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+const char* ssid     = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
 // Set web server port number to 80
 WiFiServer server(80);
